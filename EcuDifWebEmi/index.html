@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuaciones Diferenciales | Guía Completa</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">📘 DIFF<span>EQ</span></div>
+            <ul class="nav-links">
+                <li><a href="#intro">Inicio</a></li>
+                <li><a href="#tipos">Clasificación</a></li>
+                <li><a href="#guia-tecnica">Guía de Resolución</a></li>
+                <li><a href="#graficador-pro">Graficador</a></li>
+                <li><a href="#metodos">Métodos</a></li>
+                <li><a href="#aplicaciones">Aplicaciones</a></li>
+            </ul>
+    </nav>
+
+    <header class="hero" id="intro">
+        <div class="hero-content">
+            <span class="badge">Matemáticas para Ingenieria</span>
+            <h1>El mundo de las <span class="highlight">Ecuaciones Diferenciales</span></h1>
+            <p>Aprende a describir cómo evoluciona el mundo. Desde el crecimiento poblacional hasta la transferencia de calor, todo se rige por tasas de cambio.</p>
+            <div class="example-box">
+                <strong>Ejemplo fundamental:</strong>
+                <p>$$\frac{dy}{dx} = ky \implies y = Ce^{kx}$$</p>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <img src="assets/imagenes/Img_2.jpeg" alt="Modelo Exponencial">
+        </div>
+    </header>
+
+    <section class="content-section" id="tipos">
+        <div class="section-title">
+            <h2>Clasificación y Fórmulas</h2>
+            <p>Un recorrido por las estructuras fundamentales que modelan la realidad.</p>
+        </div>
+
+        <div class="grid-container">
+            <div class="card">
+                <h3>1. Primer Orden</h3>
+                <p>Relacionan la función con su primera derivada. Ideales para modelos de cambio simple.</p>
+                <div class="formula-block">
+                    $$\frac{dy}{dx} + P(x)y = Q(x)$$
+                </div>
+                <ul class="tag-list">
+                    <li>Variables separables</li>
+                    <li>Factor integrante</li>
+                    <li>Exactas</li>
+                </ul>
+                <a href="https://youtu.be/93_thdT08aM?si=ZmHpyzhFdGaNuS4t" target="_blank" class="btn-video">
+                    <span>▶</span> Ver Tutorial
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>2. Segundo Orden</h3>
+                <p>Fundamentales en física (vibraciones y resortes). Incluyen hasta la segunda derivada.</p>
+                <div class="formula-block">
+                    $$a\frac{d^2y}{dx^2} + b\frac{dy}{dx} + cy = f(x)$$
+                </div>
+                <p><small>Solución: \( y = y_h + y_p \)</small></p>
+                <a href="https://youtu.be/iyAF4BgYFxI?si=KXwF6Wpsk1qM3ECN" target="_blank" class="btn-video">
+                    <span>▶</span> Ver Tutorial
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>3. Parciales (EDP)</h3>
+                <p>Involucran múltiples variables independientes y derivadas parciales.</p>
+                <div class="formula-block">
+                    $$\frac{\partial u}{\partial t} = k\frac{\partial^2 u}{\partial x^2}$$
+                </div>
+                <p><small>Ecuaciones de Calor, Onda y Laplace.</small></p>
+                <a href="https://youtu.be/cPV8pU8e2C8" target="_blank" class="btn-video">
+                    <span>▶</span> Ver Tutorial
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="hero-image">
+        <img src="assets/imagenes/Img_1.jpeg" alt="Modelo Exponencial">
+    </div>
+
+    <section class="methods" id="metodos">
+        <div class="methods-container">
+            <div class="method-box">
+                <h3>⚙️ Métodos Analíticos</h3>
+                <p>Para obtener soluciones exactas mediante álgebra y cálculo integral.</p>
+                <ul>
+                    <li>Transformada de Laplace</li>
+                    <li>Ecuaciones exactas</li>
+                    <li>Factores integrantes</li>
+                </ul>
+            </div>
+            
+            <div class="method-box highlight-box">
+                <h3>💻 Métodos Numéricos</h3>
+                <p>Cuando la solución exacta es imposible, recurrimos al poder computacional.</p>
+                <ul>
+                    <li>Método de Euler</li>
+                    <li>Runge-Kutta</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="apps" id="aplicaciones">
+        <div class="section-title">
+            <h2>🌍 Aplicaciones Reales</h2>
+        </div>
+        <div class="apps-grid">
+            <div class="app-item">⚡ <strong>Ingeniería Eléctrica</strong>: Circuitos y control.</div>
+            <div class="app-item">🚗 <strong>Ingeniería Mecánica</strong>: Vibraciones.</div>
+            <div class="app-item">🌡️ <strong>Física</strong>: Termodinámica.</div>
+            <div class="app-item">📈 <strong>Economía</strong>: Modelos dinámicos.</div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2 class="section-title">Historia de las Ecuaciones Diferenciales</h2>
+        <div class="grid-container">
+            <div class="card">
+                <p>Las ecuaciones diferenciales surgieron en el siglo XVII gracias a Isaac Newton y Gottfried Leibniz...</p>
+                <p>Hoy en día, son fundamentales en ingeniería, física, economía y muchas otras áreas...</p>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <img src="assets/imagenes/Img_3.jpeg" alt="Aplicación de ED en Ingeniería">
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2 class="section-title">Conceptos Clave</h2>
+        <div class="grid-container">
+            <div class="card"><h3>Orden</h3><p>Determinada por la derivada de mayor grado.</p></div>
+            <div class="card"><h3>Grado</h3><p>Exponente de la derivada de mayor orden.</p></div>
+            <div class="card"><h3>Linealidad</h3><p>Sin productos entre la función y sus derivadas.</p></div>
+            <div class="card"><h3>Condiciones iniciales</h3><p>Para hallar soluciones específicas.</p></div>
+            <div class="card"><h3>Solución general</h3><p>Incluye constantes arbitrarias.</p></div>
+            <div class="card"><h3>Solución particular</h3><p>Sin constantes (valor específico).</p></div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2 class="section-title">Calculadora</h2>
+        <div class="grid-container">
+            <div class="card">
+                <input id="pantalla" readonly style="width:100%; padding:10px; margin-bottom:10px;">
+                <div class="calc-grid">
+                    <button onclick="add('7')">7</button><button onclick="add('8')">8</button><button onclick="add('9')">9</button><button onclick="add('/')">/</button>
+                    <button onclick="add('4')">4</button><button onclick="add('5')">5</button><button onclick="add('6')">6</button><button onclick="add('*')">*</button>
+                    <button onclick="add('1')">1</button><button onclick="add('2')">2</button><button onclick="add('3')">3</button><button onclick="add('-')">-</button>
+                    <button onclick="add('0')">0</button><button onclick="calc()">=</button><button onclick="clearCalc()">C</button><button onclick="add('+')">+</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section quiz">
+        <h2 class="section-title">Preguntas</h2>
+        <div class="grid-container">
+            <div class="card">
+                <p id="pregunta" style="font-weight: bold; font-size: 1.1rem; margin-bottom: 15px;"></p>
+                <div id="opciones"></div>
+                <button id="btn-quiz" class="btn-next" onclick="siguiente()" style="margin-top: 20px;">Siguiente</button>
+                <p id="feedback" style="margin-top: 15px; font-weight: bold;"></p>
+            </div>
+        </div>
+        <br>
+        <div class="hero-image">
+            <img src="assets/imagenes/Img_4.jpeg" alt="Modelo Exponencial">
+        </div>
+    </section>
+
+    <section class="content-section" id="guia-tecnica">
+        <h2 class="section-title">Guía para Resolver Ecuaciones Diferenciales</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3 class="highlight">🔹 1er Orden</h3>
+                <p><strong>Variables Separables:</strong></p>
+                <div class="formula-block">$$\frac{dy}{dx} = g(x)h(y) \implies \int \frac{1}{h(y)} dy = \int g(x) dx$$</div>
+                <p><strong>Ecuación Lineal:</strong></p>
+                <p><small>Factor integrante:</small></p>
+                <div class="formula-block">$$\mu(x) = e^{\int P(x)dx}$$</div>
+                <p><small>Solución:</small></p>
+                <div class="formula-block">$$\mu(x)y = \int \mu(x)Q(x)dx$$</div>
+            </div>
+
+            <div class="card">
+                <h3 class="highlight">🔹 2do Orden Homogénea</h3>
+                <p>Forma: \(ay'' + by' + cy = 0\)</p>
+                <p>Usar ecuación característica: \(ar^2 + br + c = 0\)</p>
+                <ul style="list-style: none; padding: 0; font-size: 0.85rem;">
+                    <li>✅ <strong>Reales diferentes:</strong> <br> \(y = C_1e^{r_1x} + C_2e^{r_2x}\)</li>
+                    <li>✅ <strong>Reales iguales:</strong> <br> \(y = (C_1 + C_2x)e^{rx}\)</li>
+                    <li>✅ <strong>Complejas:</strong> <br> \(y = e^{\alpha x}(C_1\cos\beta x + C_2\sin\beta x)\)</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3 class="highlight">🔹 Parciales (EDP)</h3>
+                <p><strong>Separación de variables:</strong></p>
+                <p>Proponer: \(u(x,t) = X(x)T(t)\)</p>
+                <div class="formula-block">$$\frac{1}{T}\frac{dT}{dt} = \frac{1}{X}\frac{d^2X}{dx^2} = -\lambda$$</div>
+                <p>🔥 <strong>Resumen:</strong> 1er orden (separar), 2do orden (característica), Parciales (separación).</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" id="graficador-pro">
+        <h2 class="section-title">Graficador de Funciones</h2>
+        <div class="grid-container">
+            <div class="card" style="grid-column: 1 / -1; text-align: center;">
+                <p>Ingresa una función (ej: <code>sin(x)</code>, <code>x^2</code>, <code>exp(-x)</code>):</p>
+                <div style="margin: 20px 0;">
+                    <input type="text" id="ecuacionInput" placeholder="Escribe aquí..." 
+                           style="padding: 12px; width: 50%; border-radius: 8px; border: 1px solid var(--primary); background: var(--bg-dark); color: white;">
+                    <button onclick="graficarFuncion()" class="btn-next" style="padding: 12px 25px;">Graficar</button>
+                </div>
+                <canvas id="graficaInteractiva" width="700" height="350" style="background: white; border-radius: 12px; max-width: 100%;"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-main">
+        <div class="footer-bottom">
+            <p>&copy; 2026 <strong>Emiliano Luna Castañeda</strong>. 8-A.</p>
+            <span class="footer-tag">Matematicas para Ingenieria</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>
+
+    <script>
+    /* CALCULADORA */
+    function add(v){ document.getElementById("pantalla").value+=v; }
+    function calc(){
+        try{
+            document.getElementById("pantalla").value = eval(document.getElementById("pantalla").value);
+        }catch{ document.getElementById("pantalla").value="Error"; }
+    }
+    function clearCalc(){ document.getElementById("pantalla").value=""; }
+
+    /* QUIZ LÓGICA REPARADA */
+    let preguntas = [
+        { p: "¿Qué define el orden de una ecuación diferencial?", o: ["El exponente de la variable", "La derivada de mayor grado", "El número de variables"], r: 1 },
+        { p: "Si la ecuación tiene la forma y'' + P(x)y' + Q(x)y = 0, es:", o: ["De primer orden", "No lineal", "Homogénea de segundo orden"], r: 2 },
+        { p: "¿Qué método se usa cuando la solución exacta es imposible?", o: ["Variables separables", "Métodos numéricos (Euler/Runge-Kutta)", "Factor integrante"], r: 1 },
+        { p: "¿Qué permite encontrar una solución particular?", o: ["Las condiciones iniciales", "La constante C", "La derivada parcial"], r: 0 }
+    ];
+
+    let indicePregunta = 0;
+    let puntaje = 0;
+
+    function cargarQuiz() {
+        const feedback = document.getElementById("feedback");
+        feedback.innerText = "";
+        
+        if (indicePregunta < preguntas.length) {
+            document.getElementById("pregunta").innerHTML = `<strong>Pregunta ${indicePregunta + 1}/${preguntas.length}:</strong><br>${preguntas[indicePregunta].p}`;
+            let html = "";
+            preguntas[indicePregunta].o.forEach((op, index) => {
+                html += `
+                    <div style="margin: 10px 0;">
+                        <label style="cursor:pointer; display: block; padding: 5px; background: rgba(255,255,255,0.05); border-radius: 4px;">
+                            <input type="radio" name="op" value="${index}"> ${op}
+                        </label>
+                    </div>`;
+            });
+            document.getElementById("opciones").innerHTML = html;
+            document.getElementById("btn-quiz").innerText = "Siguiente";
+        } else {
+            document.getElementById("pregunta").innerHTML = "<h3>¡Quiz Finalizado!</h3>";
+            document.getElementById("opciones").innerHTML = `<p style="font-size: 1.2rem;">Tu puntaje final es: <strong>${puntaje} de ${preguntas.length}</strong></p>`;
+            document.getElementById("btn-quiz").innerText = "Reiniciar Quiz";
+        }
+    }
+
+    function siguiente() {
+        // Lógica de Reinicio
+        if (indicePregunta >= preguntas.length) {
+            indicePregunta = 0;
+            puntaje = 0;
+            cargarQuiz();
+            return;
+        }
+
+        const sel = document.querySelector('input[name="op"]:checked');
+        if (!sel) {
+            alert("Por favor, selecciona una opción.");
+            return;
+        }
+
+        const card = document.querySelector(".quiz .card");
+        const feedback = document.getElementById("feedback");
+
+        if (parseInt(sel.value) === preguntas[indicePregunta].r) {
+            card.style.borderColor = "#4ade80";
+            feedback.innerText = "Correcto ✅";
+            feedback.style.color = "#4ade80";
+            puntaje++;
+        } else {
+            card.style.borderColor = "#f87171";
+            feedback.innerText = "Incorrecto ❌ (Era: " + preguntas[indicePregunta].o[preguntas[indicePregunta].r] + ")";
+            feedback.style.color = "#f87171";
+        }
+
+        // Deshabilitar opciones temporalmente
+        document.querySelectorAll('input[name="op"]').forEach(inp => inp.disabled = true);
+
+        setTimeout(() => {
+            card.style.borderColor = ""; // Reset color
+            indicePregunta++;
+            cargarQuiz();
+        }, 1500);
+    }
+
+    cargarQuiz();
+
+    /* GRAFICADOR */
+    let miChart;
+    function graficarFuncion() {
+        const input = document.getElementById("ecuacionInput").value;
+        let datos = [];
+        try {
+            const funcion = math.compile(input);
+            for (let x = -10; x <= 10; x += 0.1) {
+                let y = funcion.evaluate({ x: x });
+                if (typeof y === 'number' && isFinite(y)) {
+                    datos.push({ x: x, y: y });
+                }
+            }
+            if (miChart) miChart.destroy();
+            const ctx = document.getElementById('graficaInteractiva').getContext('2d');
+            miChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    datasets: [{
+                        label: "y = " + input,
+                        data: datos,
+                        borderColor: '#06b6d4',
+                        borderWidth: 2,
+                        pointRadius: 0,
+                        fill: false
+                    }]
+                },
+                options: {
+                    scales: {
+                        x: { type: 'linear', position: 'bottom' },
+                        y: { type: 'linear' }
+                    }
+                }
+            });
+        } catch (error) {
+            alert("Error en la ecuación. Usa 'x'. Ej: sin(x)");
+        }
+    }
+    </script>
+</body>
+</html>
